@@ -6,7 +6,8 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                git 'https://github.com/chulliyan/Skillify-Jenkins-Project.git'
+                git branch: 'main',
+                    url: 'https://github.com/chulliyan/Skillify-Jenkins-Project.git'
             }
         }
         stage('Build'){
